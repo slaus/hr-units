@@ -1,0 +1,10 @@
+.team {
+    &__title {}
+    &__block {}
+    &__item {
+        &--img {}
+        &--photo {}
+        &--name {}
+        &--position {}
+    }
+}

@@ -1,0 +1,31 @@
+.footer {
+    &__address {}
+    &__item {
+        &--icon {
+            width: 34px;
+            height: 34px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        &--title {
+            span {}
+        }
+    }
+    &__social {
+        &--title {}
+        &--icons {
+            width: 56px;
+            height: 56px;
+    
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}

@@ -1,0 +1,123 @@
+.header {
+    width         : 100%;
+    min-height    : 100vh;
+    display       : flex;
+    flex-direction: column;
+    padding-bottom: 30px;
+    background    : rgba(150,150,150,.2);
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("/img/intro-bg.jpg") center center no-repeat;
+        background-size: cover;
+        z-index: -1;
+        opacity: .1;
+        filter: grayscale(1);
+    }
+
+    &__block {
+        min-height: 120px;
+    }
+
+    &__top {
+        width: 100%;
+
+        &>.container {
+            width          : 100%;
+            height         : 120px;
+            display        : flex;
+            justify-content: space-between;
+            align-items    : center;
+            gap            : 60px;
+        }
+
+        &.fixed {
+            position: fixed;
+            left    : 0;
+            top     : 0;
+            width   : 100%;
+            height: 65px;
+            z-index : 2;
+            background: #fff;
+            box-shadow: 0 0 15px #ccc;
+
+            &>.container {
+                height: 65px;
+            }
+
+            .header__logo a {
+                width: 150px;
+            }
+        }
+    }
+
+    &__logo {
+        margin-right: auto;
+
+        a {
+            width      : 230px;
+            height     : 62px;
+            display    : flex;
+            align-items: center;
+        }
+    }
+
+    &__call {
+        display    : flex;
+        align-items: center;
+        gap        : 15px;
+
+        &--img {
+            width : 22px;
+            height: 22px;
+        }
+
+        &--phone {
+            display       : flex;
+            gap           : 5px;
+            flex-direction: column;
+
+            a {
+                font-size  : 22px;
+                color      : $mainColor;
+                font-weight: 700;
+                transition : all .3s ease;
+
+                &:hover {
+                    color: $yellowDarkColor
+                }
+            }
+
+            span {
+                font-size: 13px;
+            }
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        color           : $mainColor;
+        line-height     : 46px;
+        width           : 100%;
+        max-width       : 215px;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        border          : 2px solid $yellowDarkColor;
+        border-radius   : 48px;
+        font-size       : 16px;
+        cursor          : pointer;
+        transition      : all 0.3s ease;
+
+        &:hover {
+            background-color: $yellowDarkColor;
+        }
+    }
+}

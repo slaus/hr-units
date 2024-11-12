@@ -1,0 +1,154 @@
+.situation {
+    padding-top   : 50px;
+    padding-bottom: 50px;
+    background    : rgba(0, 0, 0, .70);
+    position      : relative;
+
+    &:before {
+        content        : "";
+        position       : absolute;
+        left           : 0;
+        top            : 0;
+        display        : block;
+        width          : 100%;
+        height         : 100%;
+        background     : url("/img/situation-bg.jpg") center center no-repeat;
+        background-size: cover;
+        z-index        : -1;
+    }
+
+    &__title {
+        color        : $whiteColor;
+        text-align   : center;
+        font-weight  : 700;
+        font-size    : 37px;
+        margin-top   : 40px;
+        margin-bottom: 80px;
+    }
+
+    &__block {
+        position: relative;
+        width   : 100%;
+        height  : 650px;
+        // border  : 1px red solid
+    }
+
+    &__item {
+        position: absolute;
+        width: 100%;
+        max-width: 280px;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        z-index: 1;
+
+        &--desc {
+            color    : $whiteColor;
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        &--icon {}
+
+        &--img {
+            width : 80px;
+            height: 80px;
+            flex: 1 0 80px;
+
+            img {
+                width     : 100%;
+                height    : 100%;
+                object-fit: contain;
+            }
+        }
+
+        &:nth-child(1) {
+            left: 8%;
+            top: 0;
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+        &:nth-child(2) {
+            left: 4%;
+            top: calc(25% - 40px);
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+        &:nth-child(3) {
+            left: 0;
+            top: calc(50% - 40px);
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+        &:nth-child(4) {
+            left: 4%;
+            top: calc(75% - 40px);
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+        &:nth-child(5) {
+            left: 8%;
+            bottom: 0;
+            text-align: right;
+            flex-direction: row-reverse;
+        }
+        &:nth-child(6) {
+            top: 0;
+            right: 8%;
+        }
+        &:nth-child(7) {
+            top: calc(25% - 40px);
+            right: 4%;
+        }
+        &:nth-child(8) {
+            top: calc(50% - 40px);
+            right: 0;
+        }
+        &:nth-child(9) {
+            top: calc(75% - 40px);
+            right: 4%;
+        }
+        &:nth-child(10) {
+            bottom: 0;
+            right: 8%;
+        }
+    }
+
+    &__img {
+        background: url("/img/situation.png") center center no-repeat;
+        background-size:cover;
+        width: 40%;
+        aspect-ratio: 1;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        z-index: 0;
+    }
+
+    &__btn {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        display        : flex;
+        align-items    : center;
+        justify-content: center;
+        background     : linear-gradient(90deg, $yellowDarkColor, $yellowColor);
+        color          : $mainColor;
+        width          : 100%;
+        max-width      : 320px;
+        line-height    : 64px;
+        border         : none;
+        border-radius  : 64px;
+        font-size      : 20px;
+        font-weight    : 500;
+        cursor         : pointer;
+        transition     : all 1s ease;
+        box-shadow     : 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 3px 0px #ebbe30;
+
+        &:hover {
+            background: linear-gradient(270deg, $yellowDarkColor, #FFD600);
+        }
+    }
+}
