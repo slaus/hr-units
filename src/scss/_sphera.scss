@@ -2,6 +2,10 @@
     padding-top   : 50px;
     padding-bottom: 50px;
 
+    @media screen and (max-width: 1199px) {
+        padding-top: 30px;
+    }
+
     &__title {
         text-align   : center;
         font-size    : 37px;
@@ -14,6 +18,10 @@
         display              : grid;
         grid-template-columns: repeat(3, 1fr);
         gap                  : 35px;
+
+        @media screen and (max-width: 1199px) {
+            gap: 20px;
+        }
     }
 
     &__item {
@@ -30,16 +38,16 @@
         position       : relative;
 
         &:before {
-            content        : "";
-            position       : absolute;
-            left           : 0;
-            top            : 0;
-            display        : block;
-            width          : 100%;
-            height         : 100%;
-            z-index        : -1;
-            opacity        : .7;
-            filter         : grayscale(1);
+            content : "";
+            position: absolute;
+            left    : 0;
+            top     : 0;
+            display : block;
+            width   : 100%;
+            height  : 100%;
+            z-index : -1;
+            opacity : .7;
+            filter  : grayscale(1);
         }
 
         &--img {
@@ -59,65 +67,70 @@
             line-height: 24px;
             font-weight: 700;
             color      : $whiteColor;
+
+            @media screen and (max-width: 1199px) {
+                font-size  : 20px;
+                line-height: 23px;
+            }
         }
 
         &--sell:before {
-            background: url("/img/sell.jpg") center center no-repeat;
+            background     : url("/img/sell.jpg") center center no-repeat;
             background-size: cover;
         }
 
         &--admin:before {
-            background: url("/img/admin.jpg") center center no-repeat;
+            background     : url("/img/admin.jpg") center center no-repeat;
             background-size: cover;
         }
 
         &--hotel:before {
-            background: url("/img/hotel.jpg") center center no-repeat;
+            background     : url("/img/hotel.jpg") center center no-repeat;
             background-size: cover;
         }
 
         &--stock:before {
-            background: url("/img/stock.jpg") center center no-repeat;
+            background     : url("/img/stock.jpg") center center no-repeat;
             background-size: cover;
         }
 
         &--account:before {
-            background: url("/img/account.jpg") center center no-repeat;
+            background     : url("/img/account.jpg") center center no-repeat;
             background-size: cover;
         }
 
         &--build:before {
-            background: url("/img/build.jpg") center center no-repeat;
+            background     : url("/img/build.jpg") center center no-repeat;
             background-size: cover;
         }
 
         &--ads:before {
-            background: url("/img/ads.jpg") center center no-repeat;
+            background     : url("/img/ads.jpg") center center no-repeat;
             background-size: cover;
         }
 
         &--plant:before {
-            background: url("/img/plant.jpg") center center no-repeat;
+            background     : url("/img/plant.jpg") center center no-repeat;
             background-size: cover;
         }
 
         &--medical:before {
-            background: url("/img/medical.jpg") center center no-repeat;
+            background     : url("/img/medical.jpg") center center no-repeat;
             background-size: cover;
         }
 
         &--jurist:before {
-            background: url("/img/jurist.jpg") center center no-repeat;
+            background     : url("/img/jurist.jpg") center center no-repeat;
             background-size: cover;
         }
 
         &--trade:before {
-            background: url("/img/trade.jpg") center center no-repeat;
+            background     : url("/img/trade.jpg") center center no-repeat;
             background-size: cover;
         }
 
         &--it:before {
-            background: url("/img/it.jpg") center center no-repeat;
+            background     : url("/img/it.jpg") center center no-repeat;
             background-size: cover;
         }
     }

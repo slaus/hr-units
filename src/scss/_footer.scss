@@ -35,12 +35,20 @@
             font-weight: 700;
             color      : $whiteColor;
 
+            @media screen and (max-width: 1199px) {
+                font-size: 18px;
+            }
+
             a {
                 color     : $whiteColor;
                 transition: all .3s ease;
 
                 &.tel {
                     font-size: 22px;
+
+                    @media screen and (max-width: 1199px) {
+                        font-size: 21px;
+                    }
                 }
 
                 &:hover {
@@ -50,12 +58,20 @@
 
             p {
                 font-size: 19px;
+
+                @media screen and (max-width: 1199px) {
+                    font-size: 18px;
+                }
             }
 
             span {
                 font-size  : 15px;
                 font-weight: 300;
-                color      : $grayLightColor
+                color      : $grayLightColor;
+
+                @media screen and (max-width: 1199px) {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -71,12 +87,20 @@
             font-weight: 300;
             color      : $grayLightColor;
             margin-left: 10px;
+
+            @media screen and (max-width: 1199px) {
+                font-size: 16px;
+            }
         }
 
         &--icons {
             display: flex;
             height: 55px;
             gap: 10px;
+
+            @media screen and (max-width: 1199px) {
+                height: 50px;
+            }
 
             img {
                 width     : 100%;

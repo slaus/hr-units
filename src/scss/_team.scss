@@ -3,12 +3,20 @@
     padding-top   : 30px;
     padding-bottom: 50px;
 
+    @media screen and (max-width: 1199px) {
+        margin-top: 0;
+    }
+
     &__title {
         text-align   : center;
         font-weight  : 700;
         font-size    : 37px;
         margin-top   : 10px;
         margin-bottom: 40px;
+
+        @media screen and (max-width: 1199px) {
+            font-size: 35px;
+        }
     }
 
     &__block {
@@ -16,14 +24,14 @@
         padding-top: 20px;
         overflow  : hidden;
         position: relative;
+
+        @media screen and (max-width: 1199px) {
+            margin-top: 30px;
+        }
     }
 
     &__item {
         text-align: center;
-
-        &--img {}
-
-        &--photo {}
 
         &--name {
             color: $grayColor;
@@ -34,6 +42,10 @@
             font-weight: 700;
             font-size: 21px;
             margin-bottom: 10px;
+
+            @media screen and (max-width: 1199px) {
+                font-size: 20px;
+            }
         }
     }
 }

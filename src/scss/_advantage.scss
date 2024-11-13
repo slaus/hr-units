@@ -1,8 +1,12 @@
 .advantage {
     padding-top   : 50px;
     padding-bottom: 150px;
-    // background    : rgba(0, 0, 0, .70);
     position      : relative;
+
+    @media screen and (max-width: 1199px) {
+        padding-top   : 30px;
+        padding-bottom: 120px;
+    }
 
     &:before {
         content        : "";
@@ -24,12 +28,21 @@
         font-size    : 37px;
         margin-top   : 30px;
         margin-bottom: 40px;
+
+        @media screen and (max-width: 1199px) {
+            font-size : 35px;
+            margin-top: 20px;
+        }
     }
 
     &__block {
         display              : grid;
         grid-template-columns: repeat(3, 1fr);
         gap                  : 110px 3%;
+
+        @media screen and (max-width: 1199px) {
+            gap: 100px 25px;
+        }
     }
 
     &__item {
@@ -43,7 +56,7 @@
         height        : 100%;
         padding-bottom: 30px;
         z-index       : 1;
-        box-shadow: 0 0 23px #efdc3f63;
+        box-shadow    : 0 0 23px #efdc3f63;
 
         &:last-child {
             grid-column: 2;
@@ -104,16 +117,24 @@
         }
 
         &--subtitle {
-            color      : $whiteColor;
-            font-size  : 19px;
-            font-weight: 700;
-            margin-top: 15px;
+            color        : $whiteColor;
+            font-size    : 19px;
+            font-weight  : 700;
+            margin-top   : 15px;
             margin-bottom: 15px;
+
+            @media screen and (max-width: 1199px) {
+                font-size: 18px;
+            }
         }
 
         &--desc {
-            color: $whiteColor;
+            color      : $whiteColor;
             line-height: 20px;
+
+            @media screen and (max-width: 1199px) {
+                font-size: 15px;
+            }
         }
     }
 }

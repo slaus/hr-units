@@ -44,15 +44,15 @@ const swiperTeam = new Swiper('.swiper-team', {
     },
     breakpoints: {
         576: {
-            slidesPerView: 2,
+            slidesPerView: 1,
             spaceBetween: 20
         },
         767: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 20
         },
         1199: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 30
         },
     },

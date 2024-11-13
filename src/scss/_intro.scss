@@ -1,25 +1,30 @@
 .intro {
-    margin-top   : auto;
-    margin-bottom: auto;
-    display: grid;
+    margin-top           : auto;
+    margin-bottom        : auto;
+    display              : grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    align-items          : center;
+    width                : 100%;
+    height               : 100%;
 
 
     &__text {
-        display: flex;
+        display       : flex;
         flex-direction: column;
-        gap: 30px;
+        gap           : 30px;
 
         &--moto {
-            font-size: 42px;
+            font-size  : 42px;
             line-height: 46px;
+
+            @media screen and (max-width: 1199px) {
+                font-size  : 38px;
+                line-height: 42px;
+            }
         }
 
         &--btn {
-            margin-top: 50px;
+            margin-top     : 50px;
             display        : flex;
             align-items    : center;
             justify-content: center;
@@ -27,14 +32,21 @@
             color          : $mainColor;
             width          : 100%;
             max-width      : 320px;
-            line-height    : 64px;
             border         : none;
+            line-height    : 64px;
             border-radius  : 64px;
             font-size      : 20px;
             font-weight    : 500;
             cursor         : pointer;
             transition     : all 1s ease;
             box-shadow     : 0px 4px 10px rgba(0, 0, 0, 0.15), 0px 3px 0px #ebbe30;
+
+            @media screen and (max-width: 1199px) {
+                font-size    : 18px;
+                max-width    : 300px;
+                line-height  : 60px;
+                border-radius: 60px;
+            }
 
             &:hover {
                 background: linear-gradient(270deg, $yellowDarkColor, #FFD600);
@@ -43,12 +55,12 @@
     }
 
     &__img {
-        display: flex;
+        display        : flex;
         justify-content: flex-end;
 
         img {
-            width: 100%;
-            height: 100%;
+            width     : 100%;
+            height    : 100%;
             object-fit: contain;
         }
     }
