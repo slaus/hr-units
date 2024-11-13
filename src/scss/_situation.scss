@@ -4,6 +4,11 @@
     background    : rgba(0, 0, 0, .70);
     position      : relative;
 
+    @media screen and (max-width: 991px) {
+        padding-top   : 30px;
+        padding-bottom: 30px;
+    }
+
     &:before {
         content        : "";
         position       : absolute;
@@ -30,6 +35,10 @@
             margin-top   : 30px;
             margin-bottom: 50px;
         }
+
+        @media screen and (max-width: 991px) {
+            margin-top: 10px;
+        }
     }
 
     &__block {
@@ -40,6 +49,10 @@
 
         @media screen and (max-width: 1199px) {
             height: 600px;
+        }
+
+        @media screen and (max-width: 991px) {
+            height: 500px;
         }
     }
 
@@ -56,6 +69,10 @@
             gap: 20px;
         }
 
+        @media screen and (max-width: 991px) {
+            max-width: 45%;
+        }
+
         &--desc {
             color      : $whiteColor;
             font-size  : 15px;
@@ -65,14 +82,20 @@
                 font-size  : 14px;
                 line-height: 18px;
             }
+            @media screen and (max-width: 991px) {
+                text-align: left;
+                font-size: 15px;
+            }
         }
-
-        &--icon {}
 
         &--img {
             width : 80px;
             height: 80px;
             flex  : 1 0 80px;
+
+            @media screen and (max-width: 991px) {
+                flex: 0 0 80px;
+            }
 
             img {
                 width     : 100%;
@@ -86,6 +109,12 @@
             top           : 0;
             text-align    : right;
             flex-direction: row-reverse;
+
+            @media screen and (max-width: 991px) {
+                left           : 0;
+                flex-direction : row;
+                text-align: left;
+            }
         }
 
         &:nth-child(2) {
@@ -93,6 +122,13 @@
             top           : calc(25% - 40px);
             text-align    : right;
             flex-direction: row-reverse;
+
+            @media screen and (max-width: 991px) {
+                left           : 0;
+                top            : calc(25% - 20px);
+                flex-direction : row;
+                text-align: left;
+            }
         }
 
         &:nth-child(3) {
@@ -100,6 +136,11 @@
             top           : calc(50% - 40px);
             text-align    : right;
             flex-direction: row-reverse;
+
+            @media screen and (max-width: 991px) {
+                flex-direction : row;
+                text-align: left;
+            }
         }
 
         &:nth-child(4) {
@@ -107,6 +148,13 @@
             top           : calc(75% - 40px);
             text-align    : right;
             flex-direction: row-reverse;
+
+            @media screen and (max-width: 991px) {
+                left           : 0;
+                top            : calc(75% - 60px);
+                flex-direction : row;
+                text-align: left;
+            }
         }
 
         &:nth-child(5) {
@@ -114,16 +162,31 @@
             bottom        : 0;
             text-align    : right;
             flex-direction: row-reverse;
+
+            @media screen and (max-width: 991px) {
+                left           : 0;
+                flex-direction : row;
+                text-align: left;
+            }
         }
 
         &:nth-child(6) {
             top  : 0;
             right: 8%;
+
+            @media screen and (max-width: 991px) {
+                right: 0;
+            }
         }
 
         &:nth-child(7) {
             top  : calc(25% - 40px);
             right: 4%;
+
+            @media screen and (max-width: 991px) {
+                right: 0;
+                top  : calc(25% - 20px);
+            }
         }
 
         &:nth-child(8) {
@@ -134,11 +197,20 @@
         &:nth-child(9) {
             top  : calc(75% - 40px);
             right: 4%;
+
+            @media screen and (max-width: 991px) {
+                right: 0;
+                top  : calc(75% - 60px);
+            }
         }
 
         &:nth-child(10) {
             bottom: 0;
             right : 8%;
+
+            @media screen and (max-width: 991px) {
+                right: 0;
+            }
         }
     }
 
@@ -152,6 +224,10 @@
         top            : 50%;
         transform      : translate(-50%, -50%);
         z-index        : 0;
+
+        @media screen and (max-width: 991px) {
+            display: none;
+        }
     }
 
     &__btn {

@@ -47,11 +47,11 @@ const swiperTeam = new Swiper('.swiper-team', {
             slidesPerView: 1,
             spaceBetween: 20
         },
-        767: {
+        768: {
             slidesPerView: 2,
             spaceBetween: 20
         },
-        1199: {
+        1200: {
             slidesPerView: 3,
             spaceBetween: 30
         },
@@ -77,13 +77,9 @@ const swiperClients = new Swiper('.swiper-clients', {
         enabled: true,
     },
     breakpoints: {
-        767: {
+        992: {
             slidesPerView: 2,
             spaceBetween: 20
-        },
-        1199: {
-            slidesPerView: 2,
-            spaceBetween: 50
         },
     },
     on: {

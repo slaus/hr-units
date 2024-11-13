@@ -13,6 +13,10 @@
         flex-direction: column;
         gap           : 30px;
 
+        @media screen and (max-width: 991px) {
+            gap: 20px;
+        }
+
         &--moto {
             font-size  : 42px;
             line-height: 46px;
@@ -20,6 +24,10 @@
             @media screen and (max-width: 1199px) {
                 font-size  : 38px;
                 line-height: 42px;
+            }
+            @media screen and (max-width: 991px) {
+                font-size  : 36px;
+                line-height: 40px;
             }
         }
 
@@ -46,6 +54,7 @@
                 max-width    : 300px;
                 line-height  : 60px;
                 border-radius: 60px;
+                margin-top: 30px;
             }
 
             &:hover {

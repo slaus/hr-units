@@ -7,6 +7,14 @@
         display              : grid;
         grid-template-columns: 1fr 1fr;
         gap                  : 25px 20px;
+
+        @media screen and (max-width: 1199px) {
+            grid-template-columns: 1fr;
+            gap                  : 20px;
+        }
+        @media screen and (max-width: 991px) {
+            grid-template-columns: 1fr 1fr;
+        }
     }
 
     &__item {
@@ -15,8 +23,17 @@
         gap                  : 15px;
         align-items          : center;
 
+        @media screen and (max-width: 1199px) {
+            gap: 20px;
+        }
+        @media screen and (max-width: 991px) {
+            justify-content: center;
+        }
+
         &:last-child {
             grid-column: 1 / -1;
+
+            @media screen and (max-width: 991px) {}
         }
 
         &--icon {
@@ -68,6 +85,7 @@
                 font-size  : 15px;
                 font-weight: 300;
                 color      : $grayLightColor;
+                display: block;
 
                 @media screen and (max-width: 1199px) {
                     font-size: 14px;
@@ -77,10 +95,14 @@
     }
 
     &__social {
-        margin-top: 30px;
-        display: flex;
+        margin-top : 30px;
+        display    : flex;
         align-items: center;
-        gap: 20px;
+        gap        : 20px;
+
+        @media screen and (max-width: 991px) {
+            flex-direction: column;
+        }
 
         &--title {
             font-size  : 17px;
@@ -95,11 +117,15 @@
 
         &--icons {
             display: flex;
-            height: 55px;
-            gap: 10px;
+            height : 55px;
+            gap    : 10px;
 
             @media screen and (max-width: 1199px) {
                 height: 50px;
+            }
+
+            @media screen and (max-width: 991px) {
+                justify-content: center;
             }
 
             img {

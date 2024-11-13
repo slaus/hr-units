@@ -17,7 +17,7 @@
     &__block {
         overflow  : hidden;
         margin-top: 90px;
-        position: relative;
+        position  : relative;
 
         @media screen and (max-width: 1199px) {
             margin-top: 50px;
@@ -25,10 +25,18 @@
     }
 
     &__item {
-        display    : grid;
+        display              : grid;
         grid-template-columns: 160px auto;
-        gap        : 50px;
-        align-items: center;
+        gap                  : 50px;
+        align-items          : center;
+
+        @media screen and (max-width: 1199px) {
+            gap: 30px;
+        }
+
+        @media screen and (max-width: 991px) {
+            grid-template-columns: 1fr 1fr;
+        }
 
         &--logo {
             display        : flex;
@@ -36,6 +44,10 @@
             justify-content: center;
             width          : 160px;
             height         : 130px;
+
+            @media screen and (max-width: 991px) {
+                justify-self: flex-end;
+            }
         }
 
         &--img {
@@ -48,10 +60,11 @@
             p {
                 line-height: 25px;
             }
+
             span {
-                display: block;
+                display    : block;
                 font-weight: 700;
-                font-size: 15px;
+                font-size  : 15px;
             }
         }
     }
