@@ -76,7 +76,9 @@
             }
 
             .header__call {
-                display: none;
+                @media screen and (max-width: 767px) {
+                    display: none;
+                }
             }
 
             .header__btn {
