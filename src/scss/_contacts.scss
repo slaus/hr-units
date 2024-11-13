@@ -36,6 +36,14 @@
             margin-top   : 30px;
             margin-bottom: 30px;
         }
+        @media screen and (max-width: 991px) {
+            font-size    : 32px;
+            margin-top   : 20px;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 767px) {
+            font-size: 28px;
+        }
     }
 
     &__block {

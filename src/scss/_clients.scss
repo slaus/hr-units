@@ -12,6 +12,14 @@
         @media screen and (max-width: 1199px) {
             font-size: 35px;
         }
+
+        @media screen and (max-width: 991px) {
+            font-size: 32px;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 28px;
+        }
     }
 
     &__block {
@@ -48,6 +56,10 @@
             @media screen and (max-width: 991px) {
                 justify-self: flex-end;
             }
+            @media screen and (max-width: 576px) {
+                width: 120px;
+                height: 100px;
+            }
         }
 
         &--img {
@@ -59,12 +71,19 @@
         &--desc {
             p {
                 line-height: 25px;
+
+                @media screen and (max-width: 576px) {
+                    font-size: 15px;
+                }
             }
 
             span {
                 display    : block;
                 font-weight: 700;
                 font-size  : 15px;
+                @media screen and (max-width: 576px) {
+                    font-size: 14px;
+                }
             }
         }
     }
