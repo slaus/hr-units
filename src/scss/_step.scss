@@ -1,20 +1,155 @@
 .step {
-    &__title {}
-    &__block {}
+    padding-top   : 50px;
+    padding-bottom: 50px;
+    background    : rgba(150,150,150,.15);
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: url("/img/intro-bg.jpg") center center no-repeat;
+        background-size: cover;
+        z-index: -1;
+        opacity: .05;
+        filter: grayscale(1);
+    }
+
+    &__title {
+        margin-top   : 25px;
+        margin-bottom: 30px;
+        text-align   : center;
+        font-weight  : 700;
+        font-size    : 37px;
+    }
+
+    &__block {
+        display              : grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap                  : 110px 3%;
+        position             : relative;
+        background           : url("/img/path.svg") center 30% no-repeat;
+        background-size      : contain;
+
+        &:before {
+            content        : "";
+            position       : absolute;
+            display        : block;
+            width          : 99px;
+            height         : 137px;
+            left           : -99px;
+            top            : -80px;
+            background     : url("/img/start.png") center center no-repeat;
+            background-size: contain;
+        }
+
+        &:after {
+            content        : "";
+            position       : absolute;
+            display        : block;
+            width          : 83px;
+            height         : 137px;
+            right          : -10px;
+            bottom         : 210px;
+            background     : url("/img/finish.png") center center no-repeat;
+            background-size: contain;
+        }
+    }
+
     &__item {
+        display       : flex;
+        flex-direction: column;
+        gap           : 20px;
+        position      : relative;
+
+        &:nth-child(1),
+        &:nth-child(3),
+        &:nth-child(6) {
+            &:before {
+                content        : "";
+                position       : absolute;
+                right          : -20px;
+                top            : 80px;
+                width          : 154px;
+                height         : 18px;
+                background     : url("/img/arrow1.svg") center center no-repeat;
+                background-size: contain;
+            }
+        }
+
+        &:nth-child(2),
+        &:nth-child(5),
+        &:nth-child(7) {
+            &:before {
+                content        : "";
+                position       : absolute;
+                right          : -20px;
+                top            : 50px;
+                width          : 154px;
+                height         : 18px;
+                background     : url("/img/arrow2.svg") center center no-repeat;
+                background-size: contain;
+            }
+        }
+
         &--img {
-            width: 60px;
+            width          : 105px;
+            height         : 105px;
+            border-radius  : 50%;
+            box-sizing     : content-box;
+            border         : $whiteColor solid 10px;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            background     : url("/img/step.png") center center no-repeat;
+            background-size: cover;
+            margin-top     : 15px;
+            box-shadow     : 5px 5px 50px #b4b4b4;
+            z-index        : 1;
+        }
+
+        &--number {
+            position       : absolute;
+            left           : 8px;
+            top            : 12px;
+            width          : 34px;
+            height         : 34px;
+            border-radius  : 50%;
+            border         : $whiteColor solid 4px;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            font-weight    : 900;
+            background     : $mainColor;
+            color          : $whiteColor;
+            z-index        : 2;
+        }
+
+        &--icon {
+            width : 60px;
             height: 60px;
-    
+
             img {
-                width: 100%;
-                height: 100%;
+                width     : 100%;
+                height    : 100%;
                 object-fit: contain;
             }
         }
-        &--number {}
-        &--icon {}
-        &--subtitle {}
-        &--desc {}
+
+        &--subtitle {
+            margin-top : 5px;
+            font-size  : 21px;
+            font-weight: 700;
+        }
+
+        &--desc {
+            font-size    : 14px;
+            line-height  : 20px;
+            padding-right: 10%;
+        }
     }
 }
