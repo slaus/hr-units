@@ -89,10 +89,14 @@
             width          : 83px;
             height         : 137px;
             right          : -10px;
-            bottom         : 100px;
+            bottom         : 220px;
             background     : url("/img/finish.png") center center no-repeat;
             background-size: contain;
 
+            @media screen and (max-width: 767px) {
+                bottom: 12%;
+                right: 15%;
+            }
             @media screen and (max-width: 576px) {
                 display: none;
             }
