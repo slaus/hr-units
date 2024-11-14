@@ -2,7 +2,7 @@
 // Email Submit
 // Note: filter_var() requires PHP >= 5.2.0
 //print_r($_POST);
-if ( isset($_POST['name']) || isset($_POST['phone']) || isset($_POST['email'])  ) {
+if ( isset($_POST['name']) || isset($_POST['phone']) ) {
 
         $to="liza@hr-units.ru"; // receiver of the email
         $subject = "--- Сообщение с сайта ---";			// subject of the email
@@ -15,7 +15,6 @@ if ( isset($_POST['name']) || isset($_POST['phone']) || isset($_POST['email'])  
 		<body>
 			<h3>Имя: <span style="font-weight: normal;">' . $_POST['name'] . '</span></h3>
 			<h3>Телефон: <span style="font-weight: normal;">' . $_POST['phone'] . '</span></h3>
-			<h3>E-mail: <span style="font-weight: normal;">' . $_POST['email'] . '</span></h3>
 		</body>
 	</html>';
 

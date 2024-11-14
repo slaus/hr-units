@@ -1,15 +1,15 @@
 <form action="sendmail.php" class="form">
     <div class="form__group form__group--name">
         <label for="name" class="form__label">Ваше имя</label>
-        <input type="text" id="name" name="name" class="form__input" placeholder="Имя">
+        <input type="text" id="name" name="name" class="form__input" placeholder="Имя" required>
     </div>
-    <div class="form__group form__group--email">
+    <!-- <div class="form__group form__group--email">
         <label for="email" class="form__label">Ваша почта</label>
-        <input type="text" id="email" name="email" class="form__input" placeholder="e-Mail">
-    </div>
+        <input type="text" id="email" name="email" class="form__input" placeholder="e-Mail" required>
+    </div> -->
     <div class="form__group form__group--tel">
         <label for="phone" class="form__label">Контактный номер телефона</label>
-        <input type="text" id="phone" name="phone" class="form__input" placeholder="Введите номер">
+        <input type="text" id="phone" name="phone" class="form__input" placeholder="Введите номер" required>
     </div>
     <input type="submit" class="form__submit" value="Отправить">
 </form>
